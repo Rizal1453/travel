@@ -1,0 +1,72 @@
+video {
+  object-fit: cover !important ;
+  width: 100% !important ;
+  height: 100% !important ;
+  position: fixed !important ;
+  z-index: -1 !important ;
+}
+
+.hero-container {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat !important ; */
+  height: 100vh !important ;
+  width: 100% !important ;
+  display: flex !important ;
+  flex-direction: column !important ;
+  justify-content: center !important ;
+  align-items: center !important ;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2) !important ;
+  object-fit: contain !important ;
+}
+
+.hero-container > h1 {
+  color: #fff !important ;
+  font-size: 100px !important ;
+  margin-top: -100px !important ;
+}
+
+.hero-container > p {
+  margin-top: 8px !important ;
+  color: #fff !important ;
+  font-size: 32px !important ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif !important ;
+}
+
+.hero-btns {
+  margin-top: 32px !important ;
+}
+
+.hero-btns .btn {
+  margin: 6px !important ;
+}
+
+.fa-play-circle {
+  margin-left: 4px !important ;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px !important ;
+    margin-top: -150px !important ;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px !important ;
+    margin-top: -100px !important ;
+  }
+
+  .hero-container > p {
+    font-size: 30px !important ;
+  }
+
+  .btn-mobile {
+    display: block !important ;
+    text-decoration: none !important ;
+  }
+
+  .btn {
+    width: 100% !important ;
+  }
+}

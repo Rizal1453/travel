@@ -1,0 +1,118 @@
+.cart {
+  padding: 4rem !important ;
+  background: #fff !important ;
+}
+
+h1 {
+  text-align: center !important ;
+}
+
+.cart__container {
+  display: flex !important ;
+  flex-flow: column !important ;
+  align-items: center !important ;
+  max-width: 1120px !important ;
+  width: 90% !important ;
+  margin: 0 auto !important ;
+}
+
+.cart__wrapper {
+  position: relative !important ;
+  margin: 50px 0 45px !important ;
+}
+
+.cart__items {
+  margin-bottom: 24px !important ;
+}
+
+.cart__item {
+  display: flex !important ;
+  flex: 1 !important ;
+  margin: 0 1rem !important ;
+  border-radius: 10px !important ;
+}
+
+.cart__item__link {
+  display: flex !important ;
+  flex-flow: column !important ;
+  width: 100% !important ;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17) !important ;
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)) !important ;
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)) !important ;
+  border-radius: 10px !important ;
+  overflow: hidden !important ;
+  text-decoration: none !important ;
+}
+
+.cart__item__pic-wrap {
+  position: relative !important ;
+  width: 100% !important ;
+  padding-top: 67% !important ;
+  overflow: hidden !important ;
+}
+
+.fade-img {
+  animation-name: fade-img !important ;
+  animation-duration: 2s !important ;
+}
+
+.cart__item__pic-wrap::after {
+  content: attr(data-category) !important ;
+  position: absolute !important ;
+  bottom: 0 !important ;
+  margin-left: 10px !important ;
+  padding: 6px 8px !important ;
+  max-width: calc((100%) - 60px) !important ;
+  font-size: 12px !important ;
+  font-weight: 700 !important ;
+  color: #fff !important ;
+  background-color: #1f98f4 !important ;
+  box-sizing: border-box !important ;
+}
+
+.cart__item__img {
+  position: absolute !important ;
+  top: 0 !important ;
+  right: 0 !important ;
+  bottom: 0 !important ;
+  left: 0 !important ;
+  display: block !important ;
+  width: 100% !important ;
+  max-width: 100% !important ;
+  height: 100% !important ;
+  max-height: 100% !important ;
+  object-fit: cover !important ;
+  transition: all 0.2s linear !important ;
+}
+
+.cart__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cart__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cart__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cart__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cart__item {
+    margin-bottom: 2rem;
+  }
+}
