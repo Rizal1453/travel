@@ -44,7 +44,7 @@ function NavbarComponents() {
           className={color ? "navbar-logowhite" : "navbar-logo"}
           onClick={closeMobileMenu}
         >
-          TRVL
+          Rizal
           <i className="fab fa-typo3" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
